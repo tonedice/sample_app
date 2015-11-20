@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= @restaurant.image_url %>
+<%= image_tag @restaurant.image_url.to_s if @restaurant.image_url.present? %>
 
 <p>
   <strong>Name:</strong>
